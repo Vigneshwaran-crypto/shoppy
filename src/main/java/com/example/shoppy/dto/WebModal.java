@@ -1,5 +1,6 @@
 package com.example.shoppy.dto;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class WebModal {
@@ -18,7 +19,7 @@ public class WebModal {
 	
 	private String description;
 	
-	private Integer price;
+	private BigDecimal price;
 	
 	private Integer categoryId;
 	
@@ -45,7 +46,16 @@ public class WebModal {
 	private Integer orderId;
 	
 	private Integer priceAtThatTime;
-
+	
+	private Integer pageNo;
+	
+	private Integer pageSize;
+	
+	private String sortBy;
+	
+	private boolean isAsc;
+	
+	
 	public Integer getId() {
 		return id;
 	}
@@ -102,11 +112,11 @@ public class WebModal {
 		this.description = description;
 	}
 
-	public Integer getPrice() {
+	public BigDecimal getPrice() {
 		return price;
 	}
 
-	public void setPrice(Integer price) {
+	public void setPrice(BigDecimal price) {
 		this.price = price;
 	}
 
@@ -213,6 +223,40 @@ public class WebModal {
 	public void setPriceAtThatTime(Integer priceAtThatTime) {
 		this.priceAtThatTime = priceAtThatTime;
 	}
+
+	public Integer getPageNo() {
+		return pageNo;
+	}
+
+	public void setPageNo(Integer pageNo) {
+		this.pageNo = pageNo;
+	}
+
+	public Integer getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(Integer pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public String getSortBy() {
+		return sortBy;
+	}
+
+	public void setSortBy(String sortBy) {
+		this.sortBy = sortBy;
+	}
+
+	public boolean getIsAsc() {
+		return isAsc;
+	}
+
+	public void setAsc(boolean isAsc) {
+		this.isAsc = isAsc;
+	}
+	
+	
 	
 
 }
